@@ -3,14 +3,14 @@ theme:
   name: windmill
 
 # Configuration for GitHub Pages deployment
-repo_url: https://github.com/sheikh-mohammad/a-smarter-way-to-learn-javascript-book
-repo_name: a-smarter-way-to-learn-javascript-book
-edit_uri: edit/main/docs/
+# repo_url: https://github.com/sheikh-mohammad/a-smarter-way-to-learn-javascript-book
+# repo_name: a-smarter-way-to-learn-javascript-book
+# edit_uri: edit/main/docs/
 
-# Page tree structure
-nav:
-  - Home: index.md
-  - Alerts: 1_Alerts/index.md
+# # Page tree structure
+# nav:
+#   - Home: index.md
+#   - Alerts: 1_Alerts/index.md
 
 # Extra configuration
 extra:
