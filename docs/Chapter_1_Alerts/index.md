@@ -35,3 +35,12 @@ statements end with a curly bracket instead of a semicolon. That's something I'l
 later chapter.) A semicolon isn't always necessary, but it's easier to end every statement with a
 semicolon, rather than stop to figure out whether you need one. In this training, I'll ask you to
 end every statement (that doesn't end with a curly bracket) with a semicolon.
+
+> ## CODING ALTERNATIVES TO BE AWARE OF
+
+- Some coders write `window.alert` instead of, simply, `alert`. This is a highly formal but
+perfectly correct way to write it. Most coders prefer the short form. We'll stick to the
+short form in this training.
+- In the example above, some coders would use single rather than double quotation marks.
+This is legal, as long as it's a matching pair. But in a case like this, I'll ask you to use
+double quotation marks.
