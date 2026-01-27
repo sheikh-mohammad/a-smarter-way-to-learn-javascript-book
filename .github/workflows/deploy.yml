@@ -5,8 +5,8 @@ on:
     branches:
       - main # or master, depending on your default branch
     # Optionally, specify paths to only run when documentation changes
-    paths:
-      - "docs/**"
+    # paths:
+    #   - "docs/**"
     #   - 'mkdocs.yml'
 
 jobs:
