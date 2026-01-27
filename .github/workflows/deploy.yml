@@ -21,6 +21,6 @@ jobs:
         with:
           python-version: 3.x
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material # Install MkDocs and optional themes/plugins
+        run: pip install mkdocs mkdocs-windmill # Install MkDocs and optional themes/plugins
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force --verbose
