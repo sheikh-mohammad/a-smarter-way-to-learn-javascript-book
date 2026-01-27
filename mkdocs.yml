@@ -1,4 +1,2 @@
 site_name: My Docs
 theme: windmill
-nav:
-  - Home: index.md
