@@ -8,9 +8,10 @@ theme:
 # edit_uri: edit/main/docs/
 
 # # Page tree structure
-# nav:
-#   - Home: index.md
-#   - Alerts: 1_Alerts/index.md
+nav:
+  - Home: index.md
+  - Alerts: 01_alerts.md
+  - Variables for Strings: 02_variables_for_strings.md
 
 # Extra configuration
 extra:
