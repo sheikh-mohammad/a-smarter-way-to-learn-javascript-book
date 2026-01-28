@@ -14,4 +14,6 @@ Follow these steps when user says `git` to add, commit with co-authorship, and p
 - Step 2: Creates a commit with your message and adds Qwen-Coder as a co-author
 - Step 3: Pushes your changes to the remote repository
 
+> Dont say that no commit always try to run git status.
+
 This workflow allows you to commit changes with proper co-author attribution without creating temporary files.
