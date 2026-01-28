@@ -2,7 +2,7 @@
 
 ## Efficient Git Workflow with Co-authorship
 
-Follow these steps to add, commit with co-authorship, and push changes:
+Follow these steps when user says `git` to add, commit with co-authorship, and push changes:
 
 ### Steps:
 1. `git add <files>`
