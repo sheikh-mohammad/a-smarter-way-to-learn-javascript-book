@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Variables for Strings - A Smarter Way to Learn JavaScript</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Chapter 2: Variables for Strings", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../01_alerts/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../01_alerts/" class="btn btn-xs btn-link">
+        Alerts
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="chapter-2-variables-for-strings">Chapter 2: Variables for Strings</h1>
+<p>Please memorize the following facts.</p>
+<ul>
+<li>My name is Mark.</li>
+<li>My nationality is U.S.</li>
+</ul>
+<p>Now that you've memorized my name and nationality, I won't have to repeat them,
+literally, again. If I say to you, "You probably know other people who have my name," you'll
+know I'm referring to "Mark."</p>
+<p>If I ask you whether my nationality is the same as yours, I won't have to ask, "Is your
+nationality the same as U.S.?" I'll ask, "Is your nationality the same as my nationality?" You'll remember that when I say "my nationality," I'm referring to "U.S.", and you'll compare your nationality to "U.S.", even though I haven't said "U.S." explicitly.</p>
+<p>In these examples, the terms "my name" and "my nationality" work the same way JavaScript variables do. My name is a term that refers to a particular value, "Mark." In the same way, a variable is a word that refers to a particular value.</p>
+<p>A variable is created when you write var (for variable) followed by the name that you
+choose to give it. It takes on a particular value when you assign the value to it. This is a
+JavaScript statement that creates the variable name and assigns the value "Mark" to it.</p>
+<pre><code class="language-javascript">var name = &quot;Mark&quot;;
+</code></pre>
+<p>Now the variable <code>name</code> refers to the text string "Mark".</p>
+<p>Note that it was my choice to call it <code>name</code>. I could have called it <code>myName</code>, <code>xyz</code>, <code>lol</code>, or
+something else. It's up to me how to name my variables, within limits.</p>
+<p>With the string "Mark" assigned to the variable <code>name</code>, my JavaScript code doesn't have to
+specify "Mark" again. Whenever JavaScript encounters <code>name</code>, JavaScript knows that it's a
+variable that refers to "Mark".</p>
+<p>For example, if you ask JavaScript to print <code>name</code>, it remembers the value that <code>name</code> refers
+to, and prints...</p>
+<p>Mark</p>
+<p>The value that a variable refers to can change.</p>
+<p>Let's get back to the original examples, the facts I asked you to memorize. These facts can
+change, and if they do, the terms my name and my nationality will refer to new values.</p>
+<p>I could go to court and change my name to Ace. Then my name is no longer Mark. If I want you to address me correctly, I'll have to tell you that my name is now Ace. After I tell you
+that, you'll know that my name doesn't refer to the value it used to refer to (Mark), but refers to a new value (Ace).</p>
+<p>If I transfer my nationality to U.K., my nationality is no longer U.S. It's U.K. If I want you
+to know my nationality, I'll have to tell you that it is now U.K. After I tell you that you'll know that my nationality doesn't refer to the original value, "U.S.", but now refers to a new value.</p>
+<p>JavaScript variables can also change.</p>
+<p>If I code...</p>
+<pre><code class="language-javascript">var name = &quot;Mark&quot;;
+</code></pre>
+<p><code>name</code> refers to "Mark". Then I come along and code the line...</p>
+<pre><code class="language-javascript">name = &quot;Ace&quot;;
+</code></pre>
+<p>Before I coded the new line, if I asked JavaScript to print <code>name</code>, it printed...</p>
+<p>Mark</p>
+<p>But that was then.</p>
+<p>Now if I ask JavaScript to print <code>name</code>, it prints...</p>
+<p>Ace</p>
+<p>A variable can have any number of values, but only one at a time.</p>
+<p>You may be wondering why, in the statement above that assigns "Ace" to <code>name</code>, the
+keyword <code>var</code> is missing. It's because the variable was declared earlier, in the original
+statement that assigned "Mark" to it. Remember, <code>var</code> is the keyword that creates a variable the keyword that declares it. Once a variable has been declared, you don't have to declare it
+again. You can just assign the new value to it.</p>
+<p>You can declare a variable in one statement, leaving it undefined. Then you can assign a
+value to it in a later statement, without declaring it again.</p>
+<pre><code class="language-javascript">var nationality;
+nationality = &quot;U.S.&quot;;
+</code></pre>
+<p>In the example above, the assignment statement follows the declaration statement
+immediately. But any amount of code can separate the two statements, as long as the
+declaration statement comes first. In fact, there's no law that says you have to ever define a
+variable that you've declared.</p>
+<p>JavaScript variable names have no inherent meaning to JavaScript.</p>
+<p>In English, words have meaning. You can't use just any word to communicate. I can say,
+"My name is Mark," but, if I want to be understood, I can't say, "My floogle is Mark." That's
+nonsense.</p>
+<p>But with variables, JavaScript is blind to semantics. You can use just any word (as long
+as it doesn't break the rules of variable-naming). From JavaScript's point of view...</p>
+<pre><code class="language-javascript">var floogle = &quot;Mark&quot;;
+</code></pre>
+<p>...is just as good as...</p>
+<pre><code class="language-javascript">var name = &quot;Mark&quot;;
+</code></pre>
+<p>If you write...</p>
+<pre><code class="language-javascript">var floogle = &quot;Mark&quot;;
+</code></pre>
+<p>...then ask JavaScript to print floogle, JavaScript prints...</p>
+<p>Mark</p>
+<p>Within limits, you can name variables anything you want, and JavaScript won't care.</p>
+<pre><code class="language-javascript">var lessonAuthor = &quot;Mark&quot;;
+var guyWhoKeepsSayingHisOwnName = &quot;Mark&quot;;
+var x = &quot;Mark&quot;;
+</code></pre>
+<p>JavaScript's blindness to meaning notwithstanding, when it comes to variable names,
+you'll want to give your variables meaningful names, because it'll help you and other coders
+understand your code.</p>
+<p>Again, the syntactic difference between variables and text strings is that variables are
+never enclosed in quotes, and text strings are always enclosed in quotes.</p>
+<p>It's always...</p>
+<pre><code class="language-javascript">var lastName = &quot;Smith&quot;;
+var cityOfOrigin = &quot;New Orleans&quot;;
+var aussieGreeting = &quot;g'Day&quot;;
+</code></pre>
+<p>If it's an alphabet letter or word, and it isn't enclosed in quotes, and it isn't a keyword that has special meaning for JavaScript, like <code>alert</code>, it's a variable.</p>
+<p>If it's some characters enclosed in quotes, it's a text string.</p>
+<p>If you haven't noticed, let me point out the spaces between the variable and the equal sign,
+and between the equal sign and the value.</p>
+<pre><code class="language-javascript">var nickname = &quot;Bub&quot;;
+</code></pre>
+<p>These spaces are a style choice rather than a legal requirement. But I'll ask you to include
+them in your code throughout the practice exercises.</p>
+<p>In the last chapter you learned to write...</p>
+<pre><code class="language-javascript">alert(&quot;Thanks for your input!&quot;);
+</code></pre>
+<p>When the code executes, a message box displays saying "Thanks for your input!"</p>
+<p>But what if you wrote these two statements instead:</p>
+<pre><code class="language-javascript">var thanx = &quot;Thanks for your input!&quot;
+alert(thanx);
+</code></pre>
+<p>Instead of placing a text string inside the parentheses of the alert statement, the code
+above assigns the text string to a variable. Then it places the variable, not the string, inside the parentheses. Because JavaScript always substitutes the value for the variable, JavaScript displays—not the variable name thanx but the text to which it refers, "Thanks for your input!"</p>
+<p>That same alert, "Thanks for your input!" displays.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../01_alerts/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../01_alerts/" class="btn btn-xs btn-link">
+        Alerts
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
