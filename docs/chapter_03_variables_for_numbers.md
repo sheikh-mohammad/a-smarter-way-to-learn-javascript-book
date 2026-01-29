@@ -1,4 +1,4 @@
-# Chapter 3: Variables for Numbers
+# Chapter 03: Variables for Numbers
 
 A string isn't the only thing you can assign to a variable. You can also assign a number.
 

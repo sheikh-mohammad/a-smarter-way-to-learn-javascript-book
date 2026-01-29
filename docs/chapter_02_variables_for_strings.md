@@ -1,4 +1,4 @@
-# Chapter 2: Variables for Strings
+# Chapter 02: Variables for Strings
 
 Please memorize the following facts.
 
