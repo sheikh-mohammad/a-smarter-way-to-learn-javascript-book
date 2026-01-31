@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Chapter 06: Math expressions: Unfamiliar operators - A Smarter Way to Learn JavaScript</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Chapter 06: Math expressions: Unfamiliar operators", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+
+    <h1 id="chapter-06-math-expressions-unfamiliar-operators">Chapter 06: Math expressions: Unfamiliar operators</h1>
+<p>There are several specialized math expressions you need to know. Here's the first one.</p>
+<pre><code class="language-javascript">num++;
+</code></pre>
+<p>This is a short way of writing...</p>
+<pre><code class="language-javascript">num = num + 1;
+</code></pre>
+<p>It increments the variable by 1.</p>
+<p>You decrement using minuses instead of pluses.</p>
+<pre><code class="language-javascript">num--;
+</code></pre>
+<p>You can use these expressions in an assignment. But the result may surprise you.</p>
+<pre><code class="language-javascript">var num = 1;
+var newNum = num++;
+</code></pre>
+<p>In the example above, the original value of num is assigned to <code>newNum</code>, and <code>num</code> is
+incremented afterward. If <code>num</code> is originally assigned 1 in the first statement, the second
+statement boosts its value to 2. <code>newNum</code> gets the original value of num, 1.</p>
+<p>If you place the pluses before the variable, you get a different result.</p>
+<pre><code class="language-javascript">var num = 1;
+var newNum = ++num;
+</code></pre>
+<p>In the statements above, both <code>num</code> and <code>newNum</code> wind up with a value of 2.</p>
+<p>If you put the minuses after the variable, the new variable is assigned the original value,
+and the first variable is decremented.</p>
+<pre><code class="language-javascript">var num = 1;
+var newNum = num--;
+</code></pre>
+<p><code>num</code> is decremented to 0, and <code>newNum</code> gets the original value of <code>num</code>, 1.</p>
+<p>But if you put the minuses before the variable, <code>newNum</code> is assigned the decremented, not
+the original, value. Both <code>num</code> and <code>newNum</code> wind up with a value of 0.</p>
+<pre><code class="language-javascript">var num = 1;
+var newNum = --num;
+</code></pre>
+
+  <br>
+    
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
