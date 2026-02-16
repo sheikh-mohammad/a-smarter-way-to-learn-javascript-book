@@ -1,4 +1,4 @@
-# Chapter 10: Comparison operators
+# Chapter 11: Comparison operators
 
 Let's talk a little more about `===`. It's a type of comparison operator, specifically an
 *equality operator*. As you learned in the last chapter, you use it to *compare* two things to see if they're *equal*.
