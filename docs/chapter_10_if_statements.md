@@ -1,4 +1,4 @@
-# Chapter 10: if statements
+# Chapter 10: *if* statements
 
 Suppose you code a prompt that asks, "Where does the Pope live?"
 If the user answers correctly, you display an alert congratulating him.
