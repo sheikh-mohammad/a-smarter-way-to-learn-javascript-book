@@ -1,0 +1,84 @@
+# License Information
+
+## Copyright Notice
+
+**A Smarter Way to Learn JavaScript**
+Copyright © 2013 by Mark Myers
+
+## Original Book License
+
+This project contains educational content based on the original book "A Smarter Way to Learn JavaScript" by Mark Myers, published in 2013. The original book and its content are copyrighted by Mark Myers. All rights to the original educational content, chapter structures, examples, and pedagogical approaches remain with the original copyright holder.
+
+## Website Implementation License
+
+The implementation of this website, including:
+- MkDocs configuration files
+- HTML templates (if any)
+- CSS styling specific to this implementation
+- JavaScript code for website functionality
+- Project structure and organization
+- Documentation formatting and layout
+
+is licensed under the MIT License, as detailed below:
+
+### MIT License
+
+Copyright (c) 2026-present, Website Implementation by contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Educational Use Rights
+
+This project is intended for educational purposes. Users are granted permission to:
+- Access and read the content for personal learning
+- Use the examples for educational purposes
+- Reference the material for study and research
+- Create derivative educational materials for personal learning
+
+## Restrictions
+
+The following uses are restricted:
+- Commercial distribution of the original book content
+- Reproduction of the original book in whole or in part for commercial purposes
+- Claims of authorship of the original book content
+- Use of the content in ways that violate the original copyright holder's rights
+
+## Trademark Notice
+
+"A Smarter Way to Learn JavaScript" is a work of educational content. All trademarks and trade names are property of their respective owners.
+
+## Third-Party Components
+
+This project may include third-party components with separate copyright notices and license terms. These are subject to their respective licenses:
+
+- MkDocs documentation framework
+- Windmill theme for MkDocs
+- Any additional libraries or frameworks used in the implementation
+
+## Fair Use Disclaimer
+
+This project may contain excerpts from the original book under fair use or fair dealing provisions for educational and commentary purposes. The original copyright and trademark holders are not affiliated with this project.
+
+## Contact Information
+
+For questions about licensing or copyright concerns, please contact the repository maintainers through GitHub.
+
+---
+
+*This license file was created to clearly define the rights and limitations associated with both the original book content and the website implementation.*
