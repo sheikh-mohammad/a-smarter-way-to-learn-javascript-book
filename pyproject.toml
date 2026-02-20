@@ -6,5 +6,4 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "mkdocs>=1.6.1",
-    "mkdocs-windmill>=1.0.5",
 ]
