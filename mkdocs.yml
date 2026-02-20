@@ -1,6 +1,6 @@
 site_name: A Smarter Way to Learn JavaScript
 theme:
-  name: windmill
+  name: material
 
 # Configuration for GitHub Pages deployment
 # repo_url: https://github.com/sheikh-mohammad/a-smarter-way-to-learn-javascript-book
