@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Chapter 10 if statements - A Smarter Way to Learn JavaScript</title>
+    <title>Chapter 10: if statements - A Smarter Way to Learn JavaScript</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,9 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Chapter 10: if statements", url: "#_top", children: [
+              {title: "CODING ALTERNATIVES TO BE AWARE OF", url: "#coding-alternatives-to-be-aware-of" },
+          ]},
         ];
 
     </script>
@@ -51,7 +54,60 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h1 id="chapter-10-if-statements">Chapter 10: <em>if</em> statements</h1>
+<p>Suppose you code a prompt that asks, "Where does the Pope live?"
+If the user answers correctly, you display an alert congratulating him.
+This is the code.</p>
+<pre><code class="language-javascript">var x = prompt(&quot;Where does the Pope live?&quot;);
+if (x === &quot;Vatican&quot;) {
+    alert(&quot;Correct!&quot;);
+}
+</code></pre>
+<p>If the user enters "Vatican" in the prompt field, the congratulations alert displays. If he
+enters something else, nothing happens. (This simplified code doesn't allow for other correct
+answers, like "The Vatican." I don't want to get into that now.)</p>
+<p>There's a lot to take in here. Let's break it down.</p>
+<p>An <em>if</em> statement always begins with <code>if</code>. The space that separates it from the parenthesis is
+new to you. I've taught you to code alerts and prompts with the opening parenthesis running up
+against the keyword: <code>alert("Hi");</code> Now I'm asking you not to do that in an <em>if</em> statement. It's
+purely a matter of style, but common style rules sanction this inconsistency.</p>
+<p>Following the <code>if</code> keyword-plus-space is the condition that's being tested—does the
+variable that's been assigned the user's response have a value of "Vatican"?
+The condition is enclosed in parentheses.</p>
+<p>If the condition tests true, something happens. Any number of statements might execute. In
+this case, only one statement executes: a congratulatory alert displays.</p>
+<p>The first line of an <em>if</em> statement ends with an opening curly bracket. An entire <em>if</em> statement
+ends with a closing curly bracket on its own line. Note that this is an exception to the rule that a statement ends with a semicolon. It's common to omit the semicolon when it's a complex
+statement that's paragraph-like and ends in a curly bracket.</p>
+<p>But what about that triple equal sign? You might think that it should just be an equal sign,
+but the equal sign is reserved for assigning a value to a variable. If you're testing a variable for a value, you can't use the single equal sign.</p>
+<p>If you forget this rule and use a single equal sign when you should use the triple equal
+sign, the code won't run properly.</p>
+<p>As you might expect, you can use a variable instead of a string in the example code.</p>
+<pre><code class="language-javascript">var correctAnswer = &quot;Vatican&quot;;
+if (x === correctAnswer) {
+    alert(&quot;Correct!&quot;);
+}
+</code></pre>
+<p>When a condition is met, you can have any number of statements execute.</p>
+<pre><code class="language-javascript">var correctAnswer = &quot;Vatican&quot;;
+if (x === correctAnswer) {
+    score++;
+    userIQ = &quot;genius&quot;;
+    alert(&quot;Correct!&quot;);
+}
+</code></pre>
+<blockquote>
+<h2 id="coding-alternatives-to-be-aware-of">CODING ALTERNATIVES TO BE AWARE OF</h2>
+</blockquote>
+<ul>
+<li>
+<p>Some coders write simple if statements without curly brackets, which is legal. Some put the opening curly bracket on its own line. Some put the whole <em>if</em> statement, if it's simple, on a single line. I find it easiest not to have to make case-by-case decisions, so I format all <em>if</em> statements the same way, as shown in the example. In the exercises, I'll ask you to follow these style rules for all <em>if</em> statements.</p>
+</li>
+<li>
+<p>In most cases, a double equal sign <code>==</code> is just as good as a triple equal sign <code>===</code>. However, there is a slight technical difference, which you may never need to know. Again, to keep things simple, I always use the triple equal sign.</p>
+</li>
+</ul>
 
   <br>
     

@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Chapter 11 comparison operators - A Smarter Way to Learn JavaScript</title>
+    <title>Chapter 11: Comparison operators - A Smarter Way to Learn JavaScript</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,9 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Chapter 11: Comparison operators", url: "#_top", children: [
+              {title: "CODING ALTERNATIVES TO BE AWARE OF", url: "#coding-alternatives-to-be-aware-of" },
+          ]},
         ];
 
     </script>
@@ -51,7 +54,50 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h1 id="chapter-11-comparison-operators">Chapter 11: Comparison operators</h1>
+<p>Let's talk a little more about <code>===</code>. It's a type of comparison operator, specifically an
+<em>equality operator</em>. As you learned in the last chapter, you use it to <em>compare</em> two things to see if they're <em>equal</em>.</p>
+<p>You can use the equality operator to compare a variable with a string, a variable with a
+number, a variable with a math expression, or a variable with a variable. And you can use it to
+compare various combinations. All of the following are legal first lines in <em>if</em> statements:</p>
+<pre><code class="language-javascript">if (fullName === &quot;Mark&quot; + &quot; &quot; + &quot;Myers&quot;) {
+if (fullName === firstName + &quot; &quot; + &quot;Myers&quot;) {
+if (fullName === firstName + &quot; &quot; + &quot;Myers&quot;) {
+if (fullName === &quot;firstName + &quot; &quot; + lastName) {
+if (totalCost === 81.50 + 135) {
+if (totalCost === materialsCost + 135) {
+if (totalCost === materialsCost + laborCost) {
+if (x + y === a - b) {
+</code></pre>
+<p>When you're comparing strings, the equality operator is case-sensitive. "Rose" does not
+equal "rose."</p>
+<p>Another comparison operator, <code>!==</code>, is the opposite of <code>===</code>. It means is <em>not equal</em> to.</p>
+<pre><code class="language-javascript">if (yourTicketNumber !== 487208) {
+    alert(&quot;Better luck next time.&quot;);
+}
+</code></pre>
+<p>Like <code>===</code>, the not-equal operator can be used to compare numbers, strings, variables, math
+expressions, and combinations.</p>
+<p>Like <code>===</code>, string comparisons using the not-equal operator are case-sensitive. It's true that "Rose" <code>!==</code> "rose".</p>
+<p>Here are 4 more comparison operators, usually used to compare numbers.</p>
+<p><code>&gt;</code> is greater than</p>
+<p><code>&lt;</code> is less than</p>
+<p><code>&gt;=</code> is greater than or equal to</p>
+<p><code>&lt;=</code> is less than or equal to</p>
+<p>In the examples below, all the conditions are true.</p>
+<pre><code class="language-javascript">if (1 &gt; 0) {
+if (0 &lt; 1) {
+if (1 &gt;= 0) {
+if (1 &gt;= 1) {
+if (0 &lt;= 1) {
+if (1 &lt;= 1) {
+</code></pre>
+<blockquote>
+<h2 id="coding-alternatives-to-be-aware-of">CODING ALTERNATIVES TO BE AWARE OF</h2>
+</blockquote>
+<ul>
+<li>Just as the double equal sign can usually be used instead of the triple equal sign, <code>!=</code> can usually be used instead of <code>!==</code>. In the exercises, I'll ask you to stick to <code>!==</code>.</li>
+</ul>
 
   <br>
     

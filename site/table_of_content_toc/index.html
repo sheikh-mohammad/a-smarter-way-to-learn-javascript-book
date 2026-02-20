@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Chapter 13: if statements nested - A Smarter Way to Learn JavaScript</title>
+    <title>Table of content toc - A Smarter Way to Learn JavaScript</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,8 +32,6 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Chapter 13: if statements nested", url: "#_top", children: [
-          ]},
         ];
 
     </script>
@@ -53,38 +51,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="chapter-13-if-statements-nested">Chapter 13: if statements nested</h1>
-<p>Check out this code.</p>
-<pre><code class="language-javascript">1 if ((x === y || a === b) &amp;&amp; c === d) {
-2 g = h;
-3 }
-4 else {
-5 e = f;
-6 }
-</code></pre>
-<p>In the code above, if either of the first conditions is true, and, in addition, the third
-condition is true, then <code>g</code> is assigned <code>h</code>. Otherwise, <code>e</code> is assigned <code>f</code>.</p>
-<p>There's another way to code this, using <em>nesting</em>.</p>
-<pre><code class="language-javascript">1 if (c === d) {
-2 if (x === y) {
-3 g = h;
-4 }
-5 else if (a === b) {
-6 g = h;
-7 }
-8 else {
-9 e = f;
-10 }
-11 }
-12 else {
-13 e = f;
-14 }
-</code></pre>
-<p>Nest levels are communicated to JavaScript by the positions of the curly brackets. There are three blocks nested inside the top-level <em>if</em>. If the condition tested by the top-level <em>if</em>—that <code>c</code> has the same value as <code>d</code>—is false, none of the blocks nested inside executes. The opening curly bracket on line 1 and the closing curly bracket on line 11 enclose all the nested code, telling JavaScript that everything inside is second-level.</p>
-<p>For readability, a lower level is indented 2 spaces beyond the level above it.</p>
-<p>In the relatively simple set of tests and outcomes shown in this example, I would prefer to
-use the more concise structure of multiple conditions. But when things get really complicated,
-nested <em>ifs</em> are a good way to go.</p>
+    
 
   <br>
     
