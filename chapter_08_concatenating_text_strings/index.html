@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Chapter 08 concatenating text strings - A Smarter Way to Learn JavaScript</title>
+    <title>Chapter 08: Concatenating text strings - A Smarter Way to Learn JavaScript</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,8 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Chapter 08: Concatenating text strings", url: "#_top", children: [
+          ]},
         ];
 
     </script>
@@ -51,7 +53,56 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h1 id="chapter-08-concatenating-text-strings">Chapter 08: Concatenating text strings</h1>
+<p>In Chapter 1 you learned to display a message in an alert, coding it this way.</p>
+<pre><code class="language-javascript">alert(&quot;Thanks for your input!&quot;);
+</code></pre>
+<p>Or you could code it this way.</p>
+<pre><code class="language-javascript">var message = &quot;Thanks for your input!&quot;;
+alert(message);
+</code></pre>
+<p>But suppose you wanted to personalize a message. In another part of your code you've
+asked the user for her name and assigned the name that she entered to a variable, <code>userName</code>.</p>
+<p>(You don't know how to do this yet. You'll learn how in a subsequent chapter.)</p>
+<pre><code class="language-javascript">var userName = &quot;Susan&quot;;
+</code></pre>
+<p>Now, you want to combine her name with a standard "Thanks" to produce an alert that
+says, for example, "Thanks, Susan!"</p>
+<p>When the user provided her name, we assigned it to the variable <code>userName</code>. This is the
+code.</p>
+<pre><code class="language-javascript">alert(&quot;Thanks, &quot; + userName + &quot;!&quot;);
+</code></pre>
+<p>Using the plus operator, the code combines—concatenates—three elements into the
+message: the string "Thanks, " plus the string represented by the variable <code>userName</code> plus the
+string "!"</p>
+<p>Note that the first string includes a space. Without it, the alert would read,
+"Thanks,Susan!".</p>
+<p>You can concatenate any combination of strings and variables, or all strings or all
+variables. For example, I can rewrite the last example this way.</p>
+<pre><code class="language-javascript">var message = &quot;Thanks, &quot;;
+var banger = &quot;!&quot;;
+alert(message + userName + banger);
+</code></pre>
+<p>Here it is, with three strings.</p>
+<pre><code class="language-javascript">alert(&quot;Thanks, &quot; + &quot;Susan&quot; + &quot;!&quot;);
+</code></pre>
+<p>You can assign a concatenation to a variable.</p>
+<pre><code class="language-javascript">var message = &quot;Thanks, &quot;;
+var userName = &quot;Susan&quot;;
+var banger = &quot;!&quot;;
+var customMess = message + userName + banger;
+alert(customMess);
+</code></pre>
+<p>If you put numbers in quotes, JavaScript concatenates them as strings rather than adding
+them. This code...</p>
+<pre><code class="language-javascript">alert(&quot;2&quot; + &quot;2&quot;);
+</code></pre>
+<p>...displays the message "22".</p>
+<p>If you mix strings and numbers...</p>
+<pre><code class="language-javascript">alert(&quot;2 plus 2 equals &quot; + 2 + 2);
+</code></pre>
+<p>...JavaScript automatically converts the numbers to strings, and displays the message "2
+plus 2 equals 22".</p>
 
   <br>
     

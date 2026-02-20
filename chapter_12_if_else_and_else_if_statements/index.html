@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Chapter 12 if else and else if statements - A Smarter Way to Learn JavaScript</title>
+    <title>Chapter 12: if...else and else if statements - A Smarter Way to Learn JavaScript</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,6 +32,9 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Chapter 12: if...else and else if statements", url: "#_top", children: [
+              {title: "CODING ALTERNATIVES TO BE AWARE OF", url: "#coding-alternatives-to-be-aware-of" },
+          ]},
         ];
 
     </script>
@@ -51,7 +54,66 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <h1 id="chapter-12-ifelse-and-else-if-statements">Chapter 12: if...else and else if statements</h1>
+<p>The <em>if</em> statements you've coded so far have been all-or-nothing. If the condition tested
+true, something happened. If the condition tested false, nothing happened.</p>
+<pre><code class="language-javascript">var x = prompt(&quot;Where does the Pope live?&quot;);
+if (x === &quot;Vatican&quot;) {
+    alert(&quot;Correct!&quot;);
+}
+</code></pre>
+<p>Quite often, you want something to happen either way. For example:</p>
+<pre><code class="language-javascript">var x = prompt(&quot;Where does the Pope live?&quot;);
+if (x === &quot;Vatican&quot;) {
+    alert(&quot;Correct!&quot;);
+}
+if (x !== &quot;Vatican&quot;) {
+    alert(&quot;Wrong answer&quot;);
+}
+</code></pre>
+<p>In this example, we have two <em>if</em> statements, one testing for "Vatican," and another testing
+for not-"Vatican". So all cases are covered, with one alert or another displaying, depending on
+what the user has entered.</p>
+<p>The code works, but it's more verbose than necessary. The following code is more
+concise and, as a bonus, more readable.</p>
+<pre><code class="language-javascript">if (x === &quot;Vatican&quot;) {
+    alert(&quot;Correct!&quot;);
+}
+else {
+    alert(&quot;Wrong answer&quot;);
+}
+</code></pre>
+<p>In the style convention I follow, the else part has exactly the same formatting as the <em>if</em> part.
+As in the <em>if</em> part, any number of statements can execute within the else part.</p>
+<pre><code class="language-javascript">var correctAnswer = &quot;Vatican&quot;;
+if (x === correctAnswer) {
+    alert(&quot;Correct!&quot;);
+}
+else {
+    score--;
+    userIQ = &quot;problematic&quot;;
+    alert(&quot;Incorrect&quot;);
+}
+</code></pre>
+<p><em>else if</em> is used <em>if</em> all tests above have failed and you want to test another condition.</p>
+<pre><code class="language-javascript">var correctAnswer = &quot;Vatican&quot;;
+if (x === correctAnswer) {
+    alert(&quot;Correct!&quot;);
+}
+else if (x === &quot;Rome&quot;) {
+    alert(&quot;Incorrect but close&quot;);
+}
+else {
+    alert(&quot;Incorrect&quot;);
+}
+</code></pre>
+<p>In a series of <em>if</em> tests, JavaScript stops testing whenever a condition tests true.</p>
+<blockquote>
+<h2 id="coding-alternatives-to-be-aware-of">CODING ALTERNATIVES TO BE AWARE OF</h2>
+</blockquote>
+<ul>
+<li>There are so many ways to format <em>if</em> statements and their variations that the range of possibilities is almost endless. I'm partial to the format I've showed you, because it's easy to learn and produces readable code. I'll ask you to stick to this format throughout the exercises.</li>
+</ul>
 
   <br>
     
