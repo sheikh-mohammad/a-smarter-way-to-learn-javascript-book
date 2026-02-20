@@ -11,12 +11,12 @@ theme:
 nav:
   - Home: index.md
   - How to Use This Book: book_usage.md
-  - Alerts: chapter_01_alerts.md
-  - Variables for Strings: chapter_02_variables_for_strings.md
-  - Variables for Numbers: chapter_03_variables_for_numbers.md
-  - Variables Names Legal and Illegal: chapter_04_variable_names_legal_and_illegal.md
-  - Math Expressions - Fimiliar Operators: chapter_05_math_expressions_familiar_operators.md
-  - Math Expressions - Unfimiliar Operators: chapter_06_math_expressions_unfamiliar_operators.md
+  - Alerts: chapters/chapter_01_alerts.md
+  - Variables for Strings: chapters/chapter_02_variables_for_strings.md
+  - Variables for Numbers: chapters/chapter_03_variables_for_numbers.md
+  - Variables Names Legal and Illegal: chapters/chapter_04_variable_names_legal_and_illegal.md
+  - Math Expressions - Fimiliar Operators: chapters/chapter_05_math_expressions_familiar_operators.md
+  - Math Expressions - Unfimiliar Operators: chapters/chapter_06_math_expressions_unfamiliar_operators.md
 
 # Extra configuration
 extra:
